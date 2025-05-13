@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ders - LinguaPro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fddef6;
+      padding: 40px;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+
+    .level-box {
+      background: rgb(255, 255, 255);
+      padding: 20px;
+      border-radius: 8px;
+      width: 100%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (min-width: 768px) {
+      .level-box {
+        width: 40%;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #9d4caf;
+      color: white;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #9d4caf;
+    }
+
+    .menu {
+      margin-bottom: 30px;
+    }
+
+    .menu-content {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu-content li {
+      margin: 10px 0;
+    }
+
+    .menu-content a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .sayfa {
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-left: 32px;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <ul class="menu-content">
+      <li><a href="index.html"><span class="material-symbols-outlined">home</span><span> Ana Sayfa</span></a></li>
+      <li><a href="lesson.html"><span class="material-symbols-outlined">menu_book</span><span> Dersler</span></a></li>
+      <li><a href="profile.html"><span class="material-symbols-outlined">person</span><span> Profil</span></a></li>
+      <li><a href="login.html"><span class="material-symbols-outlined">login</span><span> Giriş</span></a></li>
+      <li><a href="signup.html"><span class="material-symbols-outlined">person_add</span><span> Kayıt Ol</span></a></li>
+      <li><a href="#"><span class="material-symbols-outlined">logout</span><span> Çıkış</span></a></li>
+    </ul>
+  </div>
+
+  <div class="sayfa">
+    <h1 style="text-align: center; color: #9d4caf;">DERSLER / LESSONS</h1>
+    <hr style="width: 60%; margin: auto; margin-bottom: 30px;">
+    <div class="container">
+      <div class="level-box">
+        <h2>A1</h2>
+        <a href="sayilar.html" class="btn">Sayılar/Numbers</a>
+        <a href="renkler.html" class="btn">Renkler/Colors</a>
+        <a href="aile.html" class="btn">Aile Bireyleri/Family Members</a>
+      </div>
+
+      <div class="level-box">
+        <h2>A2</h2>
+        <a href="eylemler.html" class="btn">Günlük Eylemler/Daily Actions</a>
+        <a href="yiyecek.html" class="btn">Yiyecek-İçecek/Food-Drinks</a>
+        <a href="filmler.html" class="btn">Film Türleri/Movie Genres</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
